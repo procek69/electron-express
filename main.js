@@ -1,7 +1,7 @@
 const {app, BrowserWindow} = require('electron');
 
 fs = require('fs');
-config = JSON.parse(fs.readFileSync('config.json'));
+config = JSON.parse(fs.readFileSync(__dirname + '/config.json'));
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
